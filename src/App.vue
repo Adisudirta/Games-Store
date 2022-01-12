@@ -1,5 +1,12 @@
 <template>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <HomeVue></HomeVue>
 </template>
+
+<script>
+import HomeVue from "./pages/Home.vue";
+export default {
+  components: {
+    HomeVue,
+  },
+};
+</script>
