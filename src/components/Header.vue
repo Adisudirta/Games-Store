@@ -1,16 +1,20 @@
 <template>
   <header
-    class="w-screen bg-slate-800 flex justify-between items-center fixed px-10 py-4 md:px-28"
+    class="w-screen bg-gray-900 flex justify-between items-center fixed px-10 py-4 sm:px-20 md:px-28"
   >
-    <a href="#" class="flex items-center gap-3">
+    <router-link to="/" class="flex items-center gap-3">
       <img class="w-7" src="../assets/joystick.png" alt="logo" />
       <h1 class="font-bold text-gray-400 text-lg">GAMES STORE</h1>
-    </a>
+    </router-link>
 
     <!-- Desktop -->
     <div class="hidden md:flex gap-5">
-      <a class="text-gray-500 font-bold text-sm" href="#">Category</a>
-      <a class="text-gray-500 font-bold text-sm" href="#">Platform</a>
+      <router-link to="/Category" class="text-gray-500 font-bold text-sm">
+        Category
+      </router-link>
+      <router-link to="/Platform" class="text-gray-500 font-bold text-sm">
+        Platform
+      </router-link>
     </div>
 
     <!-- Mobile nav and Tablet nav -->
@@ -18,8 +22,12 @@
       class="absolute bg-gray-700 top-[15vh] p-10 flex flex-col justify-center items-center gap-5 w-3/4 rounded-md"
       :class="{ hidden: isHiden }"
     >
-      <a class="text-gray-500 font-bold" href="#">Category</a>
-      <a class="text-gray-500 font-bold" href="#">Platform</a>
+      <router-link to="/Category" class="text-gray-500 font-bold">
+        Category
+      </router-link>
+      <router-link to="/Platform" class="text-gray-500 font-bold">
+        Platform
+      </router-link>
     </div>
 
     <!-- Toggle button -->

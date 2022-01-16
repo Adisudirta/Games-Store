@@ -1,12 +1,9 @@
 <template>
-  <HomeVue></HomeVue>
+  <router-view />
 </template>
 
 <script>
-import HomeVue from "./pages/Home.vue";
 export default {
-  components: {
-    HomeVue,
-  },
+  name: "App",
 };
 </script>
