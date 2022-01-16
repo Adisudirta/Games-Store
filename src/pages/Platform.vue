@@ -8,14 +8,14 @@
   ></SearchVue>
   <MessageVue
     v-if="games.length === 0 && isError === false"
-    srcImg="./src/assets/doge.png"
+    srcImg="./doge.png"
     altImg="error-icon"
     msg="Your search results will be displayed here"
     emoticon="&#128270;"
   ></MessageVue>
   <MessageVue
     v-if="isError"
-    srcImg="./src/assets/error-icon.png"
+    srcImg="./error-icon.png"
     altImg="error-icon"
     :msg="errorMsg"
     emoticon="&#128546;"
